@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hypixel Network / Server - IronForge</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <!-- Meta -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="mranonymusz" name="author">
+    <meta property="og:site_name" content="IronForge">
+    <meta property="og:title" content="Server - IronForge">
+    <meta property="og:description" content="Donec pretium, turpis sed aliquam feugiat, nibh lectus suscipit dui, vel finibus augue leo id felis.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/img/example.jpg">
+    <meta property="og:url" content="https://example.com">
+    <!-- Meta -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/plugins/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.css">
+    <link rel="stylesheet" href="./assets/css/core.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <!-- Stylesheets -->
+    <!-- Javascripts -->
+    <script src="./assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/plugins/clipboard/clipboard.min.js"></script>
+    <script src="./assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/core.js"></script>
+    <!-- Javascripts -->
+  </head>
+  <body>
+    <!-- BODY -->
+    <div class="page-container">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="javascript:;">IronForge</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:;" id="navbar-pages-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-pages-dropdown">
+                <a class="dropdown-item" href="./servers.html">Servers</a>
+                <a class="dropdown-item" href="./pricing.html">Pricing</a>
+                <a class="dropdown-item" href="./blank.html">Blank</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./login.html">Login</a>
+                <a class="dropdown-item" href="./register.html">Register</a>
+                <a class="dropdown-item" href="./password-reset.html">Password Reset</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./error.html">Error</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:;" id="toggle-nav-sidebar" data-toggle="tooltip" data-placement="bottom" title="Navigation Sidebar">
+                <i class="fas fa-sign-out-alt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navigation Sidebar -->
+      <div class="nav-sidebar bg-dark text-white">
+        <div class="nav-sidebar-box">
+          <!-- Box Element -->
+          <div class="box-element">
+            <h4 class="title">
+              <i class="fas fa-bullhorn"></i> About Us
+            </h4>
+            <hr class="box-divider">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at tincidunt mi. Aenean a scelerisque ligula. Cras vehicula tempor nisl &hellip;</p>
+          </div>
+          <!-- Box Element -->
+          <!-- Box Element -->
+          <div class="box-element">
+            <h4 class="title">
+              <i class="fas fa-paper-plane"></i> Contact Us
+            </h4>
+            <hr class="box-divider">
+            <p class="text">Suspendisse ante quam, lacinia sed purus eget, lacinia cursus nisi. Nulla ultricies&hellip;</p>
+            <ul class="box-list hoverable mt-3">
+              <li class="list-item">
+                <i class="fas fa-envelope item-icon text-success"></i> 
+                <span class="highlighted">Email:</span> <a href="mailto:example@example.com">example@example.com</a>
+              </li>
+              <li class="list-item">
+                <i class="fas fa-phone-alt item-icon text-success"></i>
+                <span class="highlighted">Phone:</span> (555) 555-1234
+              </li>
+            </ul>
+          </div>
+          <!-- Box Element -->
+          <!-- Box Element -->
+          <div class="box-element box-element-social-media">
+            <h4 class="title">
+              <i class="fas fa-satellite"></i> Social Media
+            </h4>
+            <hr class="box-divider">
+            <ul class="social-media-links">
+              <li class="item link-facebook">
+                <a href="https://www.facebook.com/mranonymusz/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="item link-google">
+                <a href="javascript:;" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Google">
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+              <li class="item link-twitter">
+                <a href="https://twitter.com/MrAnonymusz" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="item link-discord">
+                <a href="https://discord.gg/hSE3GxV" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Discord">
+                  <i class="fab fa-discord"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Box Element -->
+          <!-- Box Element -->
+          <div class="box-element box-element-players">
+            <h4 class="title">
+              <i class="fas fa-users"></i> Players
+            </h4>
+            <hr class="box-divider">
+            <p class="text text-center">
+              <span class="highlighted">Online: </span> 54 / 100
+            </p>
+            <div class="progress mt-2" style="height: 2px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 54%;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="row player-head-list">
+              <div class="col-md-3 col-sm-3 player-head-box">
+                <a href="./profile.html" class="player-head-box-head">
+                  <img src="./assets/img/avatars/avatar_01.png" draggable="false" data-toggle="tooltip" data-placement="bottom" title="Steve" />
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 player-head-box">
+                <a href="./profile.html" class="player-head-box-head">
+                  <img src="./assets/img/avatars/avatar_02.png" draggable="false" data-toggle="tooltip" data-placement="bottom" title="Notch" />
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 player-head-box">
+                <a href="./profile.html" class="player-head-box-head" >
+                  <img src="./assets/img/avatars/avatar_03.png" draggable="false"data-toggle="tooltip" data-placement="bottom" title="Hypixel" />
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-3 player-head-box">
+                <a href="./profile.html" class="player-head-box-head">
+                  <img src="./assets/img/avatars/avatar_04.png" draggable="false" data-toggle="tooltip" data-placement="bottom" title="Technic" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Box Element -->
+        </div>
+      </div>
+      <!-- Navigation Sidebar -->
+      <!-- Navigation -->
+      <!-- Custom Content -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Server Page Container -->
+            <div class="server-page-container">
+              <div class="row">
+                <!-- Server Page Header -->
+                <div class="col-md-12">
+                  <div class="server-page-header">
+                    <img src="./assets/img/wallpapers/wallpaper_05.jpg" draggable="false"/>
+                    <div class="text-container">
+                      <h2 class="title">Hypixel Network</h2>
+                    </div>
+                    <div class="page-header-arrow-bottom-left"></div>
+                    <div class="page-header-arrow-bottom-right"></div>
+                  </div>
+                </div>
+                <!-- Server Page Header -->
+                <!-- Server Page Sidebar -->
+                <div class="col-md-3">
+                  <div class="server-page-sidebar">
+                    <div class="sidebar-head">
+                      <h5 class="title">
+                        <i class="fas fa-info-circle"></i> Information
+                      </h5>
+                    </div>
+                    <div class="sidebar-body">
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <td>Status</td>
+                              <td>
+                                <span class="badge badge-success">Online</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>IP</td>
+                              <td>
+                                <span id="clipboard-btn" data-clipboard-text="mc.hypixel.net">mc.hypixel.net</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Discord</td>
+                              <td>
+                                <a href="https://discord.gg/hSE3GxV" target="_blank">
+                                  Join!
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Players</td>
+                              <td>67193/65000</td>
+                            </tr>
+                            <tr>
+                              <td>Version</td>
+                              <td>
+                                <span class="badge badge-info">1.15</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Votes</td>
+                              <td>128411</td>
+                            </tr>
+                            <tr>
+                              <td>Uptime</td>
+                              <td>99.4%</td>
+                            </tr>
+                            <tr>
+                              <td>Country</td>
+                              <td>
+                                <img src="https://restcountries.eu/data/usa.svg" class="country-flag" draggable="false" data-toggle="tooltip" data-placement="bottom" title="United States of America"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Tags</td>
+                              <td>
+                                <ul class="tag-list">
+                                  <li>
+                                    <span class="badge badge-primary">Creative</span>
+                                  </li>
+                                  <li>
+                                    <span class="badge badge-primary">Mini Games</span>
+                                  </li>
+                                  <li>
+                                    <span class="badge badge-primary">PvP</span>
+                                  </li>
+                                  <li>
+                                    <span class="badge badge-primary">Skyblock</span>
+                                  </li>
+                                  <li>
+                                    <span class="badge badge-primary">Skywars</span>
+                                  </li>
+                                  <li>
+                                    <span class="badge badge-primary">Survival Games</span>
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Server Page Sidebar -->
+                <!-- Server Page Main Body -->
+                <div class="col-md-9">
+                  <div class="server-page-main-body">
+                    <div class="box-head">
+                      <ul class="nav nav-pills" id="server-page-main-body-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description-pane" role="tab" aria-controls="description-pane" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="banners-tab" data-toggle="tab" href="#banners-pane" role="tab" aria-controls="banners-pane" aria-selected="false">Banner(s)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos-pane" role="tab" aria-controls="videos-pane" aria-selected="false">Video(s)</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="box-body">
+                      <div class="tab-content" id="server-page-main-body-tab-content">
+                        <div class="tab-pane fade show active" id="description-pane" role="tabpanel" aria-labelledby="description-tab">
+                          In hac habitasse platea dictumst. Nullam fermentum congue odio at convallis. Phasellus vitae sem est. Nunc venenatis diam dui, dignissim varius quam pharetra at. Suspendisse aliquet magna vitae gravida ultrices. Donec varius tellus magna, eu congue lorem luctus in. Cras in eros placerat, accumsan quam quis, consequat magna. Cras nec diam ac lorem feugiat blandit. Mauris et nibh et velit tempor tempus maximus consectetur justo. Nunc eros leo, molestie non suscipit eget, scelerisque non mauris. Aliquam accumsan, massa sed tristique vulputate, libero felis cursus leo, sit amet ultricies turpis mauris luctus leo.
+                          <br/><br/>
+                          Donec ut lectus pretium, vestibulum tellus eget, volutpat ex. Sed ac enim rutrum, sodales justo eu, imperdiet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo faucibus mauris, eu vulputate erat vestibulum sed. Ut id scelerisque magna, vitae ullamcorper ligula. In placerat varius nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit tempus lacus, at fermentum lectus consequat ut. Vestibulum facilisis, ligula eu molestie egestas, ante orci dapibus tellus, vitae semper metus metus non nulla. Nam faucibus efficitur lacus, ac egestas urna faucibus ut. Suspendisse vel nibh sollicitudin, commodo mi quis, facilisis arcu. Nulla facilisi.
+                        </div>
+                        <div class="tab-pane fade" id="banners-pane" role="tabpanel" aria-labelledby="banners-tab">
+                          <div class="server-page-main-body-banner-box">
+                            <div class="banner-image-box mb-3">
+                              <img src="./assets/img/hypixel_banner.jpg" draggable="false"/>
+                            </div>
+                            <div class="banner-image-output">
+                              <!-- Banner URL -->
+                              <div class="form-group">
+                                <p class="help-text mb-2">URL</p>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="banner-url-output" placeholder="HTML Code" value="https://example.com/banners/hypixel.jpg" readonly>
+                                  <div class="input-group-append">
+                                    <button class="btn btn-success" type="button" id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#banner-url-output">
+                                      <i class="fas fa-clipboard"></i> Copy
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Banner URL -->
+                              <!-- Banner HTML Code -->
+                              <div class="form-group">
+                                <p class="help-text mb-2">HTML Code</p>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="banner-html-output" placeholder="HTML Code" value="&lt;img src=&quot;https://example.com/banners/hypixel.jpg&quot;/&gt;" readonly>
+                                  <div class="input-group-append">
+                                    <button class="btn btn-success" type="button" id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#banner-html-output">
+                                      <i class="fas fa-clipboard"></i> Copy
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Banner HTML Code -->
+                              <!-- Banner BBCode -->
+                              <div class="form-group m-0">
+                                <p class="help-text mb-2">BBCode</p>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="banner-bbcode-output" placeholder="BBCode" value="[img]https://example.com/banners/hypixel.jpg[/img]" readonly>
+                                  <div class="input-group-append">
+                                    <button class="btn btn-success" type="button" id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#banner-bbcode-output">
+                                      <i class="fas fa-clipboard"></i> Copy
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Banner BBCode -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="videos-pane" role="tabpanel" aria-labelledby="videos-tab">
+                          <div id="video-container">
+                            <iframe width="700" height="425" src="https://www.youtube.com/embed/YDMP-Ng3etk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Server Page Main Body -->
+              </div>
+            </div>
+            <!-- Server Page Container -->
+          </div>
+        </div>
+      </div>
+      <!-- Custom Content -->
+      <!-- Footer -->
+      <div class="footer">
+        <!-- Pre Footer -->
+        <div class="pre-footer">
+          <div class="arrow-top-container-left" style="border-color: transparent transparent #222 transparent;"></div>
+          <div class="arrow-top-container-right" style="border-color: transparent transparent transparent #222;"></div>
+          <div class="row">
+            <div class="col-md-4 box-left">
+              <h4 class="title">
+                <i class="fas fa-bullhorn"></i> About Us
+              </h4>
+              <hr class="box-divider">
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at tincidunt mi. Aenean a scelerisque ligula. Cras vehicula tempor nisl, sit amet elementum orci sagittis at. Sed ut vestibulum mauris. Proin congue maximus dolor, sit amet sollicitudin nulla. Sed purus lectus, efficitur nec diam id, hendrerit sollicitudin metus. Nam nec lobortis massa, id suscipit dolor. In vitae varius erat. Suspendisse placerat semper orci id dignissim. Fusce tempor sapien a lobortis sodales.
+              </p>
+            </div>
+            <div class="col-md-4 box-center">
+              <h4 class="title">
+                <i class="fas fa-list-ol"></i> Important Links
+              </h4>
+              <hr class="box-divider">
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non eros urna. Nullam placerat mauris odio.
+              </p>
+              <ul class="box-list">
+                <li class="box-item">
+                  <i class="fas fa-globe"></i> <a href="javascript:;">Example Link</a>
+                </li>
+                <li class="box-item">
+                  <i class="fas fa-globe"></i> <a href="javascript:;">Example Link</a>
+                </li>
+                <li class="box-item">
+                  <i class="fas fa-globe"></i> <a href="javascript:;">Example Link</a>
+                </li>
+                <li class="box-item">
+                  <i class="fas fa-globe"></i> <a href="javascript:;">Example Link</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 box-right">
+              <h4 class="title">
+                <i class="fab fa-facebook"></i> Facebook
+              </h4>
+              <hr class="box-divider">
+              <div id="fb-page-footer-container"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pre Footer -->
+        <!-- Main Footer -->
+        <div class="main-footer">
+          <div class="row">
+            <div class="col-md-6 box-left">
+              <p class="copyright">&copy;2020 IronForge all rights reserved.</p>
+            </div>
+            <div class="col-md-6 box-right">
+              <p class="text">Made with <i class="fas fa-heart text-danger"></i> by <a href="https://annotech.net" target="_blank">MrAnonymusz</a>.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Main Footer -->
+      </div>
+      <!-- Footer -->
+    </div>
+    <!-- BODY -->
+    <!-- JS -->
+    <script>
+    $(function() {
+      // Footer Facebook Page
+      $('#fb-page-footer-container').responsiveEmbed({
+        facebook: true,
+        url: "https://www.facebook.com/facebook",
+        appID: "YOUR-APP-ID"
+      });
+
+      // Responsive Embed
+      $('#video-container').responsiveEmbed();
+
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('#video-container').responsiveEmbed();
+      });
+
+      // Arrows
+      var window_width = $(window).width();
+
+      $('.page-header-arrow-bottom-left').css('border-left-width', (window_width / 2) + 'px');
+      $('.page-header-arrow-bottom-left').css('border-left-width', (window_width / 2) + 'px');
+      $('.page-header-arrow-bottom-right').css('border-left-width', (window_width / 2) + 'px');
+      $('.page-header-arrow-bottom-right').css('border-left-width', (window_width / 2) + 'px');
+
+      $(window).resize(function() {
+        window_width = $(window).width();
+
+        $('.page-header-arrow-bottom-left').css('border-left-width', (window_width / 2) + 'px');
+        $('.page-header-arrow-bottom-left').css('border-left-width', (window_width / 2) + 'px');
+        $('.page-header-arrow-bottom-right').css('border-left-width', (window_width / 2) + 'px');
+        $('.page-header-arrow-bottom-right').css('border-left-width', (window_width / 2) + 'px');
+      });
+
+      // Toast(s)
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        onOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      });
+
+      // Clipboard JS
+      var clipboard = new ClipboardJS('#clipboard-btn');
+
+      var copy_btn = new ClipboardJS('#copy-btn');
+
+      clipboard.on('success', function(e) {
+        Toast.fire({
+          icon: 'success',
+          title: 'Server Address Copied!\n' + e.text
+        });
+      });
+    });
+    </script>
+    <!-- JS -->
+  </body>
+</html>

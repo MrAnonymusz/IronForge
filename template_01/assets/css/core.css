@@ -1,0 +1,15 @@
+/*
+  >> Load Css Files
+*/
+
+@import "./animate.css";
+@import "./layout.css";
+@import "./template.css";
+@import "./responsive.css";
+
+/*
+  >> Load Fonts
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');

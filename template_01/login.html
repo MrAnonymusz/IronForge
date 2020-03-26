@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login - IronForge</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <!-- Meta -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="mranonymusz" name="author">
+    <meta property="og:site_name" content="IronForge">
+    <meta property="og:title" content="Login - IronForge">
+    <meta property="og:description" content="Donec pretium, turpis sed aliquam feugiat, nibh lectus suscipit dui, vel finibus augue leo id felis.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/img/example.jpg">
+    <meta property="og:url" content="https://example.com">
+    <!-- Meta -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/plugins/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/css/core.css">
+    <!-- Stylesheets -->
+    <!-- Javascripts -->
+    <script src="./assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/core.js"></script>
+    <!-- Javascripts -->
+  </head>
+  <body class="auth-body">
+    <!-- BODY -->
+    <div class="page-container">
+      <!-- Auth Container -->
+      <div class="auth-container">
+        <div class="auth-container-layer"></div>
+        <div id="particles-js"></div>
+        <!-- Auth Box -->
+        <div class="auth-box auth-login-box">
+          <div class="box-head">
+            <h3 class="title">Login</h3>
+            <hr class="box-divider">
+          </div>
+          <div class="box-body">
+            <form action="./login.html" method="post" id="login-form" autocomplete="off">
+              <div class="form-group">
+                <p class="help-text">
+                  Username <span class="help-text-info text-danger">Required</span>
+                </p>
+                <input class="form-control" name="username" type="text">
+              </div>
+              <div class="form-group">
+                <p class="help-text">
+                  Password <span class="help-text-info text-danger">Required</span>
+                </p>
+                <div class="input-group" id="password-toggle">
+                  <input class="form-control" name="password" type="password">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="Show">
+                      <i class="fas fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-group btn-block mb-2" role="group">
+                <a href="./password-reset.html" class="btn btn-danger btn-sm">
+                  <span class="fa-stack" style="font-size: 10px;">
+                    <i class="far fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-key fa-stack-1x"></i>
+                  </span>
+                  Forgot password?!
+                </a>
+                <a href="./register.html" class="btn btn-info btn-sm">
+                  <i class="fas fa-user-plus"></i> Create an Account
+                </a>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                <i class="fas fa-unlock"></i> Login
+              </button>
+            </form>
+          </div>
+          <div class="box-footer">
+            <hr class="box-divider">
+            <p class="title">Login with:</p>
+            <ul class="alt-auth-list">
+              <li class="list-item">
+                <a href="javascript:;" class="alt-auth-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="javascript:;" class="alt-auth-google" data-toggle="tooltip" data-placement="bottom" title="Google">
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="javascript:;" class="alt-auth-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="javascript:;" class="alt-auth-discord" data-toggle="tooltip" data-placement="bottom" title="Discord">
+                  <i class="fab fa-discord"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Auth Box -->
+      </div>
+      <!-- Auth Container -->
+    </div>
+    <!-- BODY -->
+    <!-- JS -->
+    <script src="./assets/plugins/particles/particles.min.js"></script>
+    <script>
+    $(function() {
+      // Login Form
+      $('#login-form').submit(function(e) {
+        e.preventDefault();
+
+        alert('Form submitted!');
+      });
+
+      // Password Toggle
+      $('#password-toggle').passwordToggle();
+
+      // Particles
+      particlesJS.load('particles-js', 'assets/plugins/particles/default_particles.json');
+
+      // Height Setter
+      $(window).resize(function() {
+        $('.auth-container').css('width', $(window).width());
+        $('.auth-container').css('height', $(window).height());
+      });
+
+      $('.auth-container').css('width', $(window).width());
+      $('.auth-container').css('height', $(window).height());
+    });
+    </script>
+    <!-- JS -->
+  </body>
+</html>
