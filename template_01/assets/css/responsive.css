@@ -1,0 +1,60 @@
+@media(max-width: 766px)
+{
+  .contact-us-box > .row > .box-right {
+    margin-top: 15px;
+  }
+
+  .footer > .pre-footer > .row > .box-center > .title,
+  .footer > .pre-footer > .row > .box-right > .title {
+    margin-top: 30px;
+  }
+
+  .footer > .main-footer > .row > .box-left {
+    text-align: center;
+  }
+
+  .footer > .main-footer > .row > .box-right {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .auth-container > .auth-box.auth-register-box {
+    width: 100%!important;
+    top: 90px;
+    left: 0;
+    transform: none;
+  }
+
+  .pricing-box > .box-body > .box-list > li.list-item {
+    text-align: center;
+  }
+
+  .panel-box {
+    position: relative;
+    display: block;
+    width: 100%!important;
+    padding: 30px;
+    margin: 90px 0 0 0;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media(max-width: 450px)
+{
+  .auth-container > .auth-box.auth-login-box,
+  .auth-container > .auth-box.auth-pw-reset-box {
+    width: 100%!important;
+    top: 90px;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media(max-width: 910px)
+{
+  .server-page-container .server-page-main-body > .box-body .banner-image-box > img {
+    width: 100%;
+  }
+}
