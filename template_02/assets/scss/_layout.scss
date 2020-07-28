@@ -1,0 +1,379 @@
+/*
+  >> Selection
+*/
+
+::selection {
+  color: white;
+  background-color: $primary;
+}
+
+/*
+  >> Scrollbar
+*/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(179, 179, 179, 0.8);
+
+  &:hover, &:active {
+    background-color: rgba($primary, 0.8);
+  }
+
+  &:window-inactive {
+    background-color: rgba(179, 179, 179, 1);
+  }
+}
+
+/*
+  >> Page Container
+*/
+
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  Body Wrapper
+*/
+
+.body-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  flex-grow: 1;
+  min-height: calc(100vh - 80.38px);
+}
+
+/*
+  >> Footer
+*/
+
+.a-footer {
+  color: $dark;
+  background-color: darken(white, 5%);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+
+  > .box-left {
+    float: left;
+    width: 50%;
+  }
+
+  > .box-right {
+    float: left;
+    text-align: right;
+    width: 50%;
+  }
+
+  > .box-left,
+  > .box-right {
+    > .text {
+      cursor: default;
+      margin: 0;
+
+      .highlighted {
+        font-weight: bold;
+        cursor: default;
+        text-decoration: underline;
+      }
+
+      a,
+      a:focus {
+        font-weight: bold;
+        color: $dark;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+      }
+
+      a:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/*
+  >> Index Page Jumbotron
+*/
+
+.index-page-jumbotron {
+  background: url("../img/wallpapers/wallpaper_05.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 600px;
+
+  > .box-container {
+    position: absolute;
+    height: fit-content;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    .media-body {
+      color: white;
+      background-color: rgba($dark, 0.85);
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $dark;
+        box-shadow: $box-shadow-lg;
+        transform: translateY(-15px);
+      }
+
+      > .box-left {
+        float: left;
+        padding-right: 15px;
+        width: 60%;
+      }
+
+      > .box-right {
+        float: left;
+        width: 40%;
+
+        > .box-list {
+          display: block;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          > .list-item {
+            display: block;
+            margin: 0 0 10px 0;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            > a,
+            > a:focus {
+              color: white;
+              background-color: rgba(255, 255, 255, 0.15);
+              display: block;
+              border-radius: $border-radius;
+              padding: 10px 20px;
+              text-decoration: none;
+              transition: all 0.3s ease;
+            }
+
+            > a:hover {
+              color: white;
+              background-color: $primary;
+              text-decoration: none;
+            }
+
+            &.active {
+              > a,
+              > a:hover,
+              > a:focus {
+                color: white;
+                background-color: darken($primary, 15%);
+              }
+            }
+          }
+        }
+      }
+
+      .title {
+        font-family: $font-family-secondary;
+        font-weight: bold;
+        color: $primary;
+        cursor: default;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+      }
+    }
+  }
+
+  > .jumbotron-banner {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+  }
+}
+
+/*
+  >> Index Page Container
+*/
+
+/* Head Info Box */
+.index-page-container {
+  .head-info-box {
+    color: white;
+    background: linear-gradient(120deg, $primary, lighten($primary, 10%), lighten($primary, 10%));
+    text-align: center;
+    border-radius: $border-radius;
+    padding: 30px;
+    box-shadow: $box-shadow;
+    margin: 50px 0 50px 0;
+
+    > .title {
+      font-family: $font-family-secondary;
+      font-weight: bold;
+      cursor: default;
+    }
+
+    #input-server-address {
+      color: white;
+      background-color: transparent;
+      border: 1px solid white;
+      text-transform: uppercase;
+    }
+  }
+
+  .info-boxes {
+    .info-box {
+      display: block;
+      margin-bottom: 50px;
+
+      .info-box-thumbnail {
+        width: 300px;
+        height: 170px;
+      }
+    }
+  }
+
+  .info-boxes-2 {
+    .info-box {
+      color: white;
+      background-color: $primary;
+      text-align: center;
+      padding: 30px;
+      margin: 0 0 30px 0;
+      border-radius: $border-radius;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+        background-color: darken($primary, 5%);
+        box-shadow: $box-shadow;
+      }
+
+      > .title {
+        font-family: $font-family-secondary;
+        cursor: default;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0;
+      }
+
+      > .text {
+        margin: 0;
+      }
+    }
+  }
+
+  .member-boxes {
+    .member-box {
+      position: relative;
+
+      > .member-image {
+        width: 100%;
+        height: 200px;
+        border-radius: $border-radius;
+      }
+
+      > .details-box {
+        color: $dark;
+        background-color: white;
+        border-radius: $border-radius;
+        width: 80%;
+        height: fit-content;
+        padding-top: 10px;
+        margin-left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        > .title {
+          font-family: $font-family-secondary;
+          cursor: default;
+          text-align: center;
+          margin: 0;
+        }
+
+        > .sub-title {
+          font-weight: bold;
+          color: $secondary;
+          cursor: default;
+          text-align: center;
+          margin: 0 0 10px 0;
+        }
+
+        > .box-list {
+          color: white;
+          background-color: $primary;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          list-style: none;
+          padding: 15px 0;
+          margin: 0;
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+
+          > .list-item {
+            float: left;
+            margin: 0 10px 0 0;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            > a {
+              color: white;
+              background-color: transparent;
+              position: relative;
+              display: block;
+              border: 2px solid white;
+              width: 34px;
+              height: 34px;
+              border-radius: 200px;
+              transition: all 0.3s ease;
+
+              &:focus {
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+              }
+
+              &:hover {
+                color: $primary;
+                background-color: white;
+              }
+
+              > i {
+                font-size: 14px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
