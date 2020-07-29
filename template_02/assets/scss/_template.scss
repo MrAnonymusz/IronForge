@@ -1,0 +1,46 @@
+/*
+  >> HTML, Body
+*/
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  >> Dropdowns
+*/
+
+.dropdown-menu {
+  box-shadow: $box-shadow;
+  padding: 0;
+
+  > .dropdown-item {
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+    
+    &:last-child {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}
+
+.dropdown-item-text {
+  font-family: $font-family-main;
+  font-weight: bold;
+  color: $dark;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: default;
+  padding: 10px 20px;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}

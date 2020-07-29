@@ -1,0 +1,38 @@
+/*
+  >> Owl Carousel
+*/
+
+.owl-nav {
+  margin: 10px 15px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  font-size: 20px;
+  color: white;
+  background: #008cba;
+  padding: 2.5px 15px!important;
+  border-radius: 200px;
+  margin: 0 5px 0 0;
+}
+
+.owl-carousel .owl-nav button.owl-next.disabled, .owl-carousel .owl-nav button.owl-prev.disabled, .owl-carousel button.owl-dot {
+  color: white;
+  background-color: #0073A1;
+  cursor: not-allowed;
+}
+
+/*
+  >> SweetAlert 2
+*/
+
+.swal2-popup.swal2-toast .swal2-styled:focus {
+  box-shadow: none!important;
+}
+
+.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after {
+  box-shadow: none!important;
+}
+
+.swal2-styled:focus {
+  box-shadow: none!important;
+}
