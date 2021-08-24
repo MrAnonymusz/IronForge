@@ -1,0 +1,34 @@
+// Color System
+$primary: #34aa2f;
+$success: #92c755;
+$info: #0ab1fc;
+$warning: #ffb80f;
+$danger: #f55145;
+$dark: #313131;
+$light-green: #9eca45;
+$light-grey: #6b798f;
+
+// <-- Brand Colors
+$social-media-brand-colors: (
+  "facebook": #4267B2,
+  "google": #DB4437,
+  "twitter": #1DA1F2,
+  "discord": #5865F2
+);
+// -->
+
+$theme-colors: ();
+
+$theme-colors: map_merge(
+  (
+    'light-green': $light-green,
+    'light-grey': $light-grey,
+  ),
+  $theme-colors
+);
+
+// Fonts
+$font-family-main: "Noto Sans", sans-serif;
+$font-family-secondary: "Roboto", sans-serif;
+
+$font-family-sans-serif: $font-family-main;

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register - IronForge</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <!-- Meta -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="mranonymusz" name="author">
+    <meta property="og:site_name" content="IronForge">
+    <meta property="og:title" content="Register - IronForge">
+    <meta property="og:description" content="Donec pretium, turpis sed aliquam feugiat, nibh lectus suscipit dui, vel finibus augue leo id felis.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/img/example.jpg">
+    <meta property="og:url" content="https://example.com">
+    <!-- Meta -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/plugins/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/plugins/sweetalert2/sweetalert2.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="./assets/css/core.css">
+    <!-- Stylesheet -->
+    <!-- Javascript -->
+    <script src="./assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./assets/plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="./assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./assets/plugins/clipboard/clipboard.min.js"></script>
+    <script src="./assets/js/core.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <!-- Javascript -->
+  </head>
+  <body>
+    <!-- BODY -->
+    <div class="page-container">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="javascript:;">
+          <img src="./assets/img/logo.png" class="navbar-brand-image" draggable="false"/>
+          <span class="navbar-brand-text">IronForge</span>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse order-1" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:;" id="navbar-pages-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Pages</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-pages-dropdown">
+                <span class="dropdown-item-text">Authentication</span>
+                <a href="./login.html" class="dropdown-item">Login</a>
+                <a href="javascript:;" class="dropdown-item active">Register</a>
+                <span class="dropdown-item-text">Other</span>
+                <a href="./pricing.html" class="dropdown-item">Pricing</a>
+                <a href="./blank.html" class="dropdown-item">Blank</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navigation -->
+      <!-- Body Wrapper -->
+      <div class="body-wrapper">
+        <main>
+          <div class="auth-container" style="padding-top: 125px;">
+            <div class="auth-box" style="width: 500px;">
+              <h3 class="auth-title">Create Account</h3>
+              <form action="./" method="post" id="register-form" autocomplete="off">
+                <!-- First & Last Name -->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <p class="form-helper">First Name <span class="ht text-danger">(Required)</span></p>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="fas fa-user-tag"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" name="fist-name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <p class="form-helper">Last Name <span class="ht text-danger">(Required)</span></p>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="fas fa-user-tag"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" name="last-name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- First & Last Name -->
+                <!-- Username -->
+                <div class="form-group">
+                  <p class="form-helper">Username <span class="ht text-danger">(Required)</span></p>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" name="username">
+                  </div>
+                  <div id="error_username"></div>
+                </div>
+                <!-- Username -->
+                <!-- Password -->
+                <div class="form-group">
+                  <p class="form-helper">Password <span class="ht text-danger">(Required)</span></p>
+                  <div class="input-group" id="password-toggle">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fas fa-key"></i>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" name="password">
+                    <div class="input-group-append">
+                      <button type="button" class="input-group-text" type="button" data-toggle="tooltip" data-placement="bottom" title="Show">
+                        <i class="fas fa-eye"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="error_password"></div>
+                </div>
+                <!-- Password -->
+                <div class="d-block text-center mt-4">
+                  <button type="submit" class="btn btn-success btn-lg pl-4 pr-4">
+                    <i class="fas fa-user-plus mr-2"></i> <span>Register</span>
+                  </button>
+                </div>
+              </form>
+              <hr class="mt-4 mb-3" style="border-top: 1px solid rgba(255, 255, 255, 0.15);" />
+              <p class="text-center mb-3" style="font-weight: bold; cursor: default;">Register using:</p>
+              <ul class="auth-3rd-party-provider-list">
+                <li class="list-item item-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                  <a href="javascript:;">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-item item-google" data-toggle="tooltip" data-placement="bottom" title="Google">
+                  <a href="javascript:;">
+                    <i class="fab fa-google"></i>
+                  </a>
+                </li>
+                <li class="list-item item-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                  <a href="javascript:;">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-item item-discord" data-toggle="tooltip" data-placement="bottom" title="Discord">
+                  <a href="javascript:;">
+                    <i class="fab fa-discord"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+        <!-- Footer -->
+        <div class="a-footer">
+          <div class="box-left">
+            <p class="text">&copy;2020 <span class="highlighted">IronForge</span> all rights reserved!</p>
+          </div>
+          <div class="box-right">
+            <p class="text">Made with <i class="fas fa-heart text-danger"></i> by <a href="https://annotech.net" target="_blank">MrAnonymusz</a>.</p>
+          </div>
+        </div>
+        <!-- Footer -->
+      </div>
+      <!-- Body Wrapper -->
+    </div>
+    <!-- BODY -->
+    <!-- JS -->
+    <script>
+    $(function() {
+      // Sweet Toast
+      const SweetToast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        onOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      });
+
+      // Password Toggle
+      $('#password-toggle').passwordToggle();
+
+      // Login Form
+      $('#register-form').submit(function(e) {
+        e.preventDefault();
+
+        SweetToast.fire({
+          icon: 'success',
+          title: 'Account successfully created!'
+        });
+      });
+    });
+    </script>
+    <!-- JS -->
+  </body>
+</html>
